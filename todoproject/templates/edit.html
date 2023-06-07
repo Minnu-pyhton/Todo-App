@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+        <form method="POST" class="p-3 shadow" enctype="multipart/form-data" style=" text-align: center;  background-color:#FFEFD5; margin:45px;>
+    {% csrf_token %}
+   {{f.as_p}}
+    <input type="submit">
+</form>
+        </div>
+    </div>
+</div>
+{% endblock %}
